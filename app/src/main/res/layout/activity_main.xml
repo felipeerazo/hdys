@@ -7,38 +7,34 @@
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
 
-    <ProgressBar
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:id="@+id/barraProgreso"
-        android:background="#fffffafe"
-        android:backgroundTint="#ff0e2bff"
-        android:layout_gravity="top|center" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
-    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
-        android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="#33b5e5"
-        android:textStyle="bold" android:textSize="50sp" android:gravity="center"
-        android:text="@string/palabra" />
+        <TextView android:id="@+id/fullscreen_content" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:keepScreenOn="true" android:textColor="#33b5e5"
+            android:textStyle="bold" android:textSize="50sp" android:gravity="center"
+            android:text="@string/game_title"
+            android:layout_gravity="center" />
 
-    <!-- This FrameLayout insets its children based on system windows using
-         android:fitsSystemWindows. -->
-    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
-        android:fitsSystemWindows="true"
-        android:layout_gravity="center_horizontal|top">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:id="@+id/button_play"
+            android:layout_gravity="center"
+            android:onClick="doPlay" />
 
-        <LinearLayout android:id="@+id/fullscreen_content_controls" style="?metaButtonBarStyle"
-            android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:background="@color/black_overlay" android:orientation="horizontal"
-            tools:ignore="UselessParent">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:id="@+id/button_about"
+            android:layout_gravity="center"
+            android:onClick="doAbout" />
+    </LinearLayout>
 
-            <Button android:id="@+id/dummy_button" style="?metaButtonBarButtonStyle"
-                android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:text="@string/dummy_button" />
-
-        </LinearLayout>
-
-    </FrameLayout>
 
 </FrameLayout>

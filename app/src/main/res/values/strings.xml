@@ -5,8 +5,13 @@
     <string name="action_settings">Settings</string>
     <string name="acerca_de">Acerca de</string>
     <string name="palabra">a través</string>
-
+    <string name="game_title">Hdys\n(How do you say)</string>
     <string name="title_activity_acerca_de">AcercaDe</string>
-    <string name="dummy_button">View my web</string>
-    <string name="acerca_de_contenido">DUMMY\nCONTENT</string>
+    <string name="correct_button">correct button</string>
+    <string name="wrong_button">wrong button</string>
+    <string name="acerca_de_contenido">I made this app to practice English.\n That\'s all.</string>
+    <string name="myName">© Felo</string>
+    <string name="title_activity_acerca_de2">AcercaDe2</string>
+    <string name="title_activity_game_over">GameOver</string>
+    <string name="title_activity_juego">Juego</string>
 </resources>
